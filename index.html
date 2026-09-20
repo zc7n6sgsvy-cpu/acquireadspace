@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AcquireAdspace — Ad space on creators who convert</title>
+  <meta name="description" content="Buy ad space on creators who don’t take every deal. Sponsored posts, streams, newsletters, midrolls. Negotiate in-thread. Payment Protection when it closes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #07070a;
+      --ink: #f4f1ea;
+      --muted: #9a958b;
+      --line: rgba(244,241,234,.12);
+      --mint: #7CFFC4;
+      --card: #101014;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { background: var(--bg); color: var(--ink); }
+    body {
+      font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
+      line-height: 1.5;
+      min-height: 100dvh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 0 0;
+    }
+    .mark { display: flex; align-items: baseline; gap: 8px; letter-spacing: -.03em; }
+    .mark b { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 22px; }
+    .mark span { color: var(--mint); font-size: 13px; font-weight: 500; }
+    .ghost {
+      border: 1px solid var(--line); color: var(--muted);
+      padding: 8px 12px; border-radius: 999px; font-size: 13px;
+    }
+    .hero { padding: 72px 0 56px; }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(36px, 7vw, 72px);
+      line-height: .95; letter-spacing: -.04em; max-width: 14ch;
+    }
+    h1 em { font-style: italic; color: var(--mint); }
+    .lede { margin-top: 22px; max-width: 42ch; color: var(--muted); font-size: 17px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 48px; padding: 0 18px; border-radius: 999px; font-weight: 600; font-size: 15px;
+    }
+    .btn-primary { background: var(--mint); color: #062016; }
+    .btn-secondary { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+    .rail {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+      background: var(--line); border: 1px solid var(--line); margin: 8px 0 72px;
+    }
+    .rail div { background: var(--bg); padding: 18px 16px; }
+    .rail small { color: var(--muted); display: block; font-size: 12px; margin-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-bottom: 80px; }
+    h2 { font-family: Fraunces, serif; font-size: 28px; letter-spacing: -.03em; margin-bottom: 14px; }
+    ol { padding-left: 18px; color: var(--muted); }
+    ol li { margin: 10px 0; }
+    .cards { display: grid; gap: 10px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      padding: 16px 16px 14px; border-radius: 16px;
+    }
+    .card b { display: block; margin-bottom: 4px; }
+    .card p { color: var(--muted); font-size: 14px; }
+    footer {
+      border-top: 1px solid var(--line); padding: 22px 0 40px;
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      color: var(--muted); font-size: 13px;
+    }
+    @media (max-width: 740px) {
+      .rail, .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark"><b>AcquireAdspace</b><span>.com</span></div>
+      <a class="ghost" href="https://acquiresponsor.com">Deals close on AcquireSponsor</a>
+    </header>
+
+    <section class="hero">
+      <h1>Ad space on creators who <em>actually convert</em>.</h1>
+      <p class="lede">Not leftover inventory. Placements on channels that say no to junk deals. You buy the space. They keep the audience. Funds lock until the placement runs.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://acquiresponsor.com">I’m a brand — get ad space</a>
+        <a class="btn btn-secondary" href="https://acquiresponsor.com">I have inventory — list it</a>
+      </div>
+    </section>
+
+    <div class="rail">
+      <div><small>Buy</small>Sponsored posts</div>
+      <div><small>Buy</small>Stream integrations</div>
+      <div><small>Buy</small>Newsletter slots</div>
+      <div><small>Buy</small>Midrolls & takeovers</div>
+    </div>
+
+    <section class="grid">
+      <div>
+        <h2>How the space gets acquired.</h2>
+        <ol>
+          <li>Browse creators by niche, size, and rate.</li>
+          <li>Negotiate the placement in-thread. No dead DMs.</li>
+          <li>Payment Protection holds the funds. Creative runs. Creator gets paid.</li>
+        </ol>
+      </div>
+      <div class="cards">
+        <div class="card"><b>Selective inventory</b><p>Creators here don’t take every deal. That’s the point of the space.</p></div>
+        <div class="card"><b>10% platform fee</b><p>Stated before you sign. More of the budget hits the placement.</p></div>
+        <div class="card"><b>Protected close</b><p>Money is funded when the deal is accepted. Released when the work is approved.</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <div>AcquireAdspace is the brand door. Deals close on AcquireSponsor.</div>
+      <div>© 2026 · Not a banner network.</div>
+    </footer>
+  </div>
+</body>
+</html>
