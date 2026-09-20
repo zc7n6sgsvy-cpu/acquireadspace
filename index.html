@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>AcquireAdspace — Ad space on creators who convert</title>
-  <meta name="description" content="Buy ad space on creators who don’t take every deal. Sponsored posts, streams, newsletters, midrolls. Negotiate in-thread. Payment Protection when it closes." />
+  <title>AcquireAdspace — Sample rate card &amp; pricing</title>
+  <meta name="description" content="Buy ad space on creators who don’t take every deal. Sample rate card, platform pricing, Payment Protection. Deals close on AcquireSponsor." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -18,6 +18,7 @@
       --card: #101014;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     html, body { background: var(--bg); color: var(--ink); }
     body {
       font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
@@ -28,8 +29,10 @@
     .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
     header {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 22px 0 0;
+      padding: 22px 0 0; gap: 16px; flex-wrap: wrap;
     }
+    nav { display: flex; gap: 16px; color: var(--muted); font-size: 13px; }
+    nav a:hover { color: var(--ink); }
     .mark { display: flex; align-items: baseline; gap: 8px; letter-spacing: -.03em; }
     .mark b { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: 22px; }
     .mark span { color: var(--mint); font-size: 13px; font-weight: 500; }
@@ -44,7 +47,7 @@
       line-height: .95; letter-spacing: -.04em; max-width: 14ch;
     }
     h1 em { font-style: italic; color: var(--mint); }
-    .lede { margin-top: 22px; max-width: 42ch; color: var(--muted); font-size: 17px; }
+    .lede { margin-top: 22px; max-width: 46ch; color: var(--muted); font-size: 17px; }
     .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
@@ -54,29 +57,53 @@
     .btn-secondary { background: transparent; border: 1px solid var(--line); color: var(--ink); }
     .rail {
       display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
-      background: var(--line); border: 1px solid var(--line); margin: 8px 0 72px;
+      background: var(--line); border: 1px solid var(--line); margin: 8px 0 80px;
     }
     .rail div { background: var(--bg); padding: 18px 16px; }
     .rail small { color: var(--muted); display: block; font-size: 12px; margin-bottom: 6px; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-bottom: 80px; }
-    h2 { font-family: Fraunces, serif; font-size: 28px; letter-spacing: -.03em; margin-bottom: 14px; }
+    section.block { padding-bottom: 80px; }
+    h2 { font-family: Fraunces, serif; font-size: clamp(28px, 4vw, 40px); letter-spacing: -.03em; margin-bottom: 10px; }
+    .sub { color: var(--muted); max-width: 58ch; margin-bottom: 22px; }
+    .note {
+      display: inline-block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--mint); margin-bottom: 10px;
+    }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
     ol { padding-left: 18px; color: var(--muted); }
     ol li { margin: 10px 0; }
     .cards { display: grid; gap: 10px; }
-    .card {
+    .card, .pkg {
       background: var(--card); border: 1px solid var(--line);
       padding: 16px 16px 14px; border-radius: 16px;
     }
-    .card b { display: block; margin-bottom: 4px; }
-    .card p { color: var(--muted); font-size: 14px; }
+    .card b, .pkg b { display: block; margin-bottom: 4px; }
+    .card p, .pkg p { color: var(--muted); font-size: 14px; }
+    .pkgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 8px; }
+    .pkg .price {
+      font-family: Fraunces, serif; font-size: 28px; letter-spacing: -.03em; margin: 8px 0 6px;
+    }
+    .pkg.featured { border-color: rgba(124,255,196,.45); }
+    .table-wrap {
+      overflow-x: auto; border: 1px solid var(--line); border-radius: 16px; background: var(--card);
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    th, td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line); font-size: 14px; }
+    th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+    td:first-child { font-weight: 500; }
+    tr:last-child td { border-bottom: 0; }
+    .fine { margin-top: 12px; color: var(--muted); font-size: 13px; }
+    .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .price-grid .card .tag { color: var(--mint); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+    .price-grid .amt { font-family: Fraunces, serif; font-size: 30px; margin: 8px 0; letter-spacing: -.03em; }
     footer {
       border-top: 1px solid var(--line); padding: 22px 0 40px;
       display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
       color: var(--muted); font-size: 13px;
     }
     @media (max-width: 740px) {
-      .rail, .grid { grid-template-columns: 1fr; }
+      .rail, .grid, .pkgs, .price-grid { grid-template-columns: 1fr; }
       .hero { padding-top: 48px; }
+      nav { width: 100%; }
     }
   </style>
 </head>
@@ -84,7 +111,11 @@
   <div class="wrap">
     <header>
       <div class="mark"><b>AcquireAdspace</b><span>.com</span></div>
-      <a class="ghost" href="https://acquiresponsor.com">Deals close on AcquireSponsor</a>
+      <nav>
+        <a href="#rates">Rate card</a>
+        <a href="#pricing">Pricing</a>
+        <a class="ghost" href="https://acquiresponsor.com">Deals close on AcquireSponsor</a>
+      </nav>
     </header>
 
     <section class="hero">
@@ -100,28 +131,122 @@
       <div><small>Buy</small>Sponsored posts</div>
       <div><small>Buy</small>Stream integrations</div>
       <div><small>Buy</small>Newsletter slots</div>
-      <div><small>Buy</small>Midrolls & takeovers</div>
+      <div><small>Buy</small>Midrolls &amp; takeovers</div>
     </div>
 
-    <section class="grid">
-      <div>
-        <h2>How the space gets acquired.</h2>
-        <ol>
-          <li>Browse creators by niche, size, and rate.</li>
-          <li>Negotiate the placement in-thread. No dead DMs.</li>
-          <li>Payment Protection holds the funds. Creative runs. Creator gets paid.</li>
-        </ol>
+    <section class="block" id="rates">
+      <div class="note">Sample rate card</div>
+      <h2>What the space costs.</h2>
+      <p class="sub">Starting ranges from 2026 creator-market bands. Live rates are set by the creator. Brief a campaign to see matched inventory — this is not a banner network with leftover slots.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Placement</th>
+              <th>Nano 1–10K</th>
+              <th>Micro 10–100K</th>
+              <th>Mid 100–500K</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sponsored post / Reel</td>
+              <td>$150–$750</td>
+              <td>$500–$3,000</td>
+              <td>$2,000–$10,000</td>
+            </tr>
+            <tr>
+              <td>Short video / TikTok</td>
+              <td>$150–$500</td>
+              <td>$500–$2,500</td>
+              <td>$2,500–$12,000</td>
+            </tr>
+            <tr>
+              <td>YouTube / stream integration</td>
+              <td>$200–$750</td>
+              <td>$750–$2,500</td>
+              <td>$2,500–$15,000</td>
+            </tr>
+            <tr>
+              <td>Newsletter slot</td>
+              <td>$80–$200</td>
+              <td>$250–$1,500</td>
+              <td>$1,000–$6,000</td>
+            </tr>
+            <tr>
+              <td>Dedicated send / takeover</td>
+              <td>$250–$800</td>
+              <td>$800–$4,000</td>
+              <td>$4,000–$20,000</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="cards">
-        <div class="card"><b>Selective inventory</b><p>Creators here don’t take every deal. That’s the point of the space.</p></div>
-        <div class="card"><b>10% platform fee</b><p>Stated before you sign. More of the budget hits the placement.</p></div>
-        <div class="card"><b>Protected close</b><p>Money is funded when the deal is accepted. Released when the work is approved.</p></div>
+      <p class="fine">Sample only. Not live bookable inventory. Niche, engagement, and usage rights move the number. Finance and B2B usually price higher than lifestyle.</p>
+
+      <div class="pkgs" style="margin-top:28px">
+        <div class="pkg">
+          <b>Single placement</b>
+          <div class="price">from $500</div>
+          <p>One sponsored post or newsletter slot. Negotiate in-thread. Payment Protection on close.</p>
+        </div>
+        <div class="pkg featured">
+          <b>Post + stills pack</b>
+          <div class="price">$2,400</div>
+          <p>One primary post plus stills or a carousel. The mid-market pack most brands brief first.</p>
+        </div>
+        <div class="pkg">
+          <b>Launch week</b>
+          <div class="price">from $8,000</div>
+          <p>Three placements across one creator or a small set. One brief, one protected close.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="pricing">
+      <div class="note">Platform pricing</div>
+      <h2>What AcquireSponsor charges.</h2>
+      <p class="sub">The ad space is priced by the creator. The platform fee is stated before you sign.</p>
+      <div class="price-grid">
+        <div class="card">
+          <div class="tag">Brands</div>
+          <div class="amt">10%</div>
+          <p>Platform fee on the closed deal. Free to browse and brief. No monthly retainer.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Creators</div>
+          <div class="amt">93%</div>
+          <p>Keep up to 93%. Free to join. Pitch your rate. Get paid when the work is approved.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Operators</div>
+          <div class="amt">Apply</div>
+          <p>Paid business account for people who broker or manage deals. A person reads the application.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="grid">
+        <div>
+          <h2>How the space gets acquired.</h2>
+          <ol>
+            <li>Browse creators by niche, size, and rate.</li>
+            <li>Negotiate the placement in-thread. No dead DMs.</li>
+            <li>Payment Protection holds the funds. Creative runs. Creator gets paid.</li>
+          </ol>
+        </div>
+        <div class="cards">
+          <div class="card"><b>Selective inventory</b><p>Creators here don’t take every deal. That’s the point of the space.</p></div>
+          <div class="card"><b>Stated before you sign</b><p>10% platform fee. More of the budget hits the placement than a 30% agency cut.</p></div>
+          <div class="card"><b>Protected close</b><p>Money is funded when the deal is accepted. Released when the work is approved.</p></div>
+        </div>
       </div>
     </section>
 
     <footer>
       <div>AcquireAdspace is the brand door. Deals close on AcquireSponsor.</div>
-      <div>© 2026 · Not a banner network.</div>
+      <div>© 2026 · Sample rates, not a media kit guarantee.</div>
     </footer>
   </div>
 </body>
